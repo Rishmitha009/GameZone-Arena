@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GameZone Arena</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">🎮 GameZone Arena</div>
+
+    <div class="menu-toggle" id="menu-toggle">
+        ☰
+    </div>
+
+    <ul class="nav-links" id="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#tournaments">Tournaments</a></li>
+        <li><a href="#leaderboard">Leaderboard</a></li>
+        <li><a href="#register">Register</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+<!-- HERO SECTION -->
+<section class="hero">
+    <h1>🎮 GameZone Arena</h1>
+    <p>Enter the Ultimate Esports Battle!</p>
+    <h3 id="timer"></h3>
+    <a href="#register" class="btn">Register Now</a>
+</section>
+
+<!-- TOURNAMENT SECTION -->
+<section class="tournaments" id="tournaments">
+    <h2>Upcoming Tournaments</h2>
+
+    <div class="card-container">
+        <div class="card">
+            <h3>BGMI Championship</h3>
+            <p>Date: March 10, 2026</p>
+            <p>Prize Pool: ₹50,000</p>
+            <button>Join</button>
+        </div>
+
+        <div class="card">
+            <h3>Valorant Clash</h3>
+            <p>Date: April 05, 2026</p>
+            <p>Prize Pool: ₹75,000</p>
+            <button>Join</button>
+        </div>
+
+        <div class="card">
+            <h3>FIFA Faceoff</h3>
+            <p>Date: May 15, 2026</p>
+            <p>Prize Pool: ₹30,000</p>
+            <button>Join</button>
+        </div>
+    </div>
+</section>
+
+<!-- LEADERBOARD -->
+<section class="leaderboard" id="leaderboard">
+    <h2>Top Players</h2>
+    <table>
+        <tr>
+            <th>Rank</th>
+            <th>Player</th>
+            <th>Game</th>
+            <th>Points</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ShadowX</td>
+            <td>BGMI</td>
+            <td>980</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Venom</td>
+            <td>Valorant</td>
+            <td>920</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Fury</td>
+            <td>FIFA</td>
+            <td>870</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Blaze</td>
+            <td>BGMI</td>
+            <td>820</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Phantom</td>
+            <td>Valorant</td>
+            <td>790</td>
+        </tr>
+    </table>
+</section>
+
+<!-- REGISTRATION -->
+<section class="register" id="register">
+    <h2>Register for Tournament</h2>
+
+    <form onsubmit="registerUser(event)">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+
+        <select required>
+            <option value="">Select Game</option>
+            <option>BGMI</option>
+            <option>Valorant</option>
+            <option>FIFA</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<!-- CONTACT US -->
+<section class="contact" id="contact">
+   
+        <div class="contact-container ">
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <h3>Contact Us</h3>
+            <p><i class="fas fa-envelope"></i> info@gamezonearena.com</p>
+            <p><i class="fas fa-phone"></i> +91 9876543210</p>
+            <p><i class="fas fa-map-marker-alt"></i> Hyderabad, India</p>
+        </div>
+        </div>
+   
+        <!-- FOLLOW US -->
+            <h2>Follow Us</h2>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-discord"></i></a>
+            </div>  
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 GameZone Arena | All Rights Reserved <br>Developed by <strong style="color: gold;">Rishmitha</strong></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
